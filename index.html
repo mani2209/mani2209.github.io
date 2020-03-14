@@ -18,7 +18,21 @@
        
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
-
+	<script type="text/javascript">
+		function monthDiff(start, end) {
+			var tempDate = new Date(start);
+			var monthCount = 0;
+			while((tempDate.getMonth()+''+tempDate.getFullYear()) != (end.getMonth()+''+end.getFullYear())) {
+				monthCount++;
+				tempDate.setMonth(tempDate.getMonth()+1);
+			}
+			return monthCount+1;
+		}
+		window.onload = function() {
+			let months = monthDiff(new Date(2013, 4, 3), new Date())
+			document.getElementById('experience').innerHTML = (months / 12 | 0) + " years and " + months % 12 +" months"
+		}
+	</script>
 
 </head> 
 
@@ -54,7 +68,7 @@
 			    <section class="resume-section summary-section mb-5">
 				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
 				    <div class="resume-section-content">
-						<li>Designing and Developing experience of almost 7 Years.</li>
+						<li>Designing and Developing experience of <span id="experience"></span>.</li>
 						<li>Involved in Requirements Mgmt., Designing, Implementations including Rollout and Post production support</li>
 						<li>Proficient in Involved in conceptualization and prototyping required for Product development such as building WordPress Plugin and Themes</li>
 						<li>Ability to relate with people at any levels of business using excellent interpersonal skills</li>
