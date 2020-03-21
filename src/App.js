@@ -17,14 +17,14 @@ function App() {
                     <ul className="list-unstyled">
                       <li className="mb-2"><a href="mailto:mani.2209@gmail.com"><i className="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i>mani.2209@gmail.com</a></li>
                       <li className="mb-2"><a href="tel:+919665655794"><i className="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-3"></i>+91 9665 655 794</a></li>
-                      <li><a href="http://tiny.cc/vc6alz" target="_blank"><i className="fas fa-map-marker-alt fa-fw mr-2" data-fa-transform="grow-3"></i>Pune, India</a></li>
+                      <li><i className="fas fa-map-marker-alt fa-fw mr-2" data-fa-transform="grow-3"></i>Pune, India</li>
                     </ul>
                   </div>
 
                   <div className="secondary-info ml-md-auto mt-2">
                     <ul className="resume-social list-unstyled">
-                      <li className="mb-3"><a href="https://www.linkedin.com/in/mani-2209/" target="_blank"><span className="fa-container text-center mr-2"><i className="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/mani-2209/</a></li>
-                      <li className="mb-3"><a href="https://www.github.com/mani2209" target="_blank"><span className="fa-container text-center mr-2"><i className="fab fa-github-alt fa-fw"></i></span>github.com/mani2209</a></li>
+                      <li className="mb-3"><a href="https://www.linkedin.com/in/mani-2209/"><span className="fa-container text-center mr-2"><i className="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/mani-2209/</a></li>
+                      <li className="mb-3"><a href="https://www.github.com/mani2209"><span className="fa-container text-center mr-2"><i className="fab fa-github-alt fa-fw"></i></span>github.com/mani2209</a></li>
                     </ul>
                   </div>
 
