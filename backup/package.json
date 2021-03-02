@@ -70,7 +70,7 @@
     "redux-thunk": "^2.1.0",
     "responsive-fixed-data-table": "^2.0.0",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "1.16.1"
+    "webpack-dev-server": "3.1.11"
   },
   "devDependencies": {
     "babelify": "^7.3.0",
