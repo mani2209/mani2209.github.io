@@ -1,304 +1,371 @@
-<html >
+<!DOCTYPE html>
+<html lang="en"> 
 <head>
-    <title>Manish Srivastava - Profile</title>
-    <link href="pillar-1.css" rel="stylesheet" media="all"></link>
-</head>
-<body>
-    <div className="App">
-        <article className="resume-wrapper text-center position-relative">
-          <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
-            <header className="resume-header pt-4 pt-md-0">
-              <div className="media flex-column flex-md-row">
-                <img className="mr-3 img-fluid picture mx-auto" src=profile.jpg alt="" />
-                <div className="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
-                  <div className="primary-info">
-                    <h1 className="name mt-0 mb-1 text-white text-uppercase text-uppercase">Manish Srivastava</h1>
-                    <div className="title mb-3">Front End Developer</div>
-                    <ul className="list-unstyled">
-                      <li className="mb-2"><a href="mailto:mani.2209@gmail.com"><i className="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i>mani.2209@gmail.com</a></li>
-                      <li className="mb-2"><a href="tel:+919665655794"><i className="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-3"></i>+91 9665 655 794</a></li>
-                      <li><i className="fas fa-map-marker-alt fa-fw mr-2" data-fa-transform="grow-3"></i>Pune, India</li>
-                    </ul>
-                  </div>
+    <title>Manish Srivastava</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Resume Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">  
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+       
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+	<script type="text/javascript">
+		function monthDiff(start, end) {
+			var tempDate = new Date(start);
+			var monthCount = 0;
+			while((tempDate.getMonth()+''+tempDate.getFullYear()) != (end.getMonth()+''+end.getFullYear())) {
+				monthCount++;
+				tempDate.setMonth(tempDate.getMonth()+1);
+			}
+			return monthCount+1;
+		}
+		window.onload = function() {
+			let months = monthDiff(new Date(2013, 4, 3), new Date())
+			document.getElementById('experience').innerHTML = (months / 12 | 0) + " years and " + months % 12 +" months"
+		}
+	</script>
 
-                  <div className="secondary-info ml-md-auto mt-2">
-                    <ul className="resume-social list-unstyled">
-                      <li className="mb-3"><a href="https://www.linkedin.com/in/mani-2209/"><span className="fa-container text-center mr-2"><i className="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/mani-2209/</a></li>
-                      <li className="mb-3"><a href="https://www.github.com/mani2209"><span className="fa-container text-center mr-2"><i className="fab fa-github-alt fa-fw"></i></span>github.com/mani2209</a></li>
-                    </ul>
-                  </div>
+</head> 
 
-                </div>
+<body>	
 
-              </div>
+    <article class="resume-wrapper text-center position-relative">
+	    <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
+		    <header class="resume-header pt-4 pt-md-0">
+			    <div class="media flex-column flex-md-row">
+				    <img class="mr-3 img-fluid picture mx-auto" src="assets/images/profile.jpg" alt="">
+				    <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+					    <div class="primary-info">
+						    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Manish Srivastava</h1>
+						    <div class="title mb-3">Front End Developer</div>
+						    <ul class="list-unstyled">
+							    <li class="mb-2"><a href="mailto:mani.2209@gmail.com"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i>mani.2209@gmail.com</a></li>
+								<li class="mb-2"><a href="tel:+919665655794"><i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-3"></i>+91 9665 655 794</a></li>
 
-            </header>
-            <div className="resume-body p-5">
-              <section className="resume-section summary-section mb-5">
-                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
-                <div className="resume-section-content">
-                  <li>Designing and Developing experience of 7 years.</li>
-                  <li>Involved in Requirements Mgmt., Designing, Implementations including Rollout and Post production support</li>
-                  <li>Proficient in Involved in conceptualization and prototyping required for Product development such as building WordPress Plugin and Themes</li>
-                  <li>Ability to relate with people at any levels of business using excellent interpersonal skills</li>
-                </div>
-              </section>
-              <div className="row">
-                <div className="col-lg-9">
-                  <section className="resume-section experience-section mb-5">
-                    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
-                    <div className="resume-section-content">
-                      <div className="resume-timeline position-relative">
-                        <article className="resume-timeline-item position-relative pb-5">
-                          <div className="resume-timeline-item-header mb-2">
-                            <div className="d-flex flex-column flex-md-row">
-                              <h3 className="resume-position-title font-weight-bold mb-1">Senior Associate</h3>
-                              <div className="resume-company-name ml-auto"><i className="fas fa-building"></i> Synechron Technologies Pvt. Ltd</div>
-                            </div>
-                            <div className="resume-position-time">January 2018 - Present</div>
-                          </div>
-                          <div className="resume-timeline-item-desc">
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
-                            <p>TBD</p>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-                            <p>TBD</p>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-                            <ul className="list-inline">
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">React with Redux</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">Node.js</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">jQuery</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">Webpack</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">HTML/SASS</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">MySQL</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">GraphQL</span></li>
-                            </ul>
-                          </div>
-                        </article>
-                        <article className="resume-timeline-item position-relative pb-5">
-                          <div className="resume-timeline-item-header mb-2">
-                            <div className="d-flex flex-column flex-md-row">
-                              <h3 className="resume-position-title font-weight-bold mb-1">Software Engineer  <small className="text-muted">Contractor</small></h3>
-                              <div className="resume-company-name ml-auto"><i className="fas fa-building"></i> Avalara Technologies Pvt. Ltd</div>
-                            </div>
-                            <div className="resume-position-time">April 2017 to Dec 2017</div>
-                          </div>
-                          <div className="resume-timeline-item-desc">
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
-                            <p>TBD</p>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-                            <p>TBD</p>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-                            <ul className="list-inline">
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">PHP</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">Angular 4</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">MySQL</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">WordPress</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">HTML/SASS</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">Node.js</span></li>
-                            </ul>
-                          </div>
-                        </article>
-                        <article className="resume-timeline-item position-relative pb-5">
-                          <div className="resume-timeline-item-header mb-2">
-                            <div className="d-flex flex-column flex-md-row">
-                              <h3 className="resume-position-title font-weight-bold mb-1">Senior Software Developer</h3>
-                              <div className="resume-company-name ml-auto"><i className="fas fa-building"></i> Wondersoft Multimedia Solutions</div>
-                            </div>
-                            <div className="resume-position-time">April 2015 – March 2017</div>
-                          </div>
-                          <div className="resume-timeline-item-desc">
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
-                            <p>TBD</p>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-                            <p>TBD</p>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-                            <ul className="list-inline">
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">PHP</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">JavaScript</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">Angular.js</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">MySQL</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">HTML/CSS</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">WordPress</span></li>
-                            </ul>
-                          </div>
-                        </article>
-                        <article className="resume-timeline-item position-relative">
-                          <div className="resume-timeline-item-header mb-2">
-                            <div className="d-flex flex-column flex-md-row">
-                              <h3 className="resume-position-title font-weight-bold mb-1">Software Developer <small className="text-muted"></small></h3>
-                              <div className="resume-company-name ml-auto"><i className="fas fa-building"></i> Stark Digital Media Services Pvt. Ltd</div>
-                            </div>
-                            <div className="resume-position-time">April 2014 – March 2015</div>
-                          </div>
-                          <div className="resume-timeline-item-desc">
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
-                            <p>TBD</p>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-                            <p>TBD</p>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-                            <ul className="list-inline">
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">PHP</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">jQuery</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">HTML/CSS</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">MySQL</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">WordPress</span></li>
-                            </ul>
-                          </div>
-                        </article>
-                        <article className="resume-timeline-item position-relative">
-                          <div className="resume-timeline-item-header mb-2">
-                            <div className="d-flex flex-column flex-md-row">
-                              <h3 className="resume-position-title font-weight-bold mb-1">Web Application Developer <small className="text-muted"></small></h3>
-                              <div className="resume-company-name ml-auto"><i className="fas fa-building"></i> Multivision India Pvt. Ltd</div>
-                            </div>
-                            <div className="resume-position-time">April 2013 – Feb 2014</div>
-                          </div>
-                          <div className="resume-timeline-item-desc">
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Roles and Res:</h4>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
-                            <li>Travel agent website.</li>
-                            <li>Property agent website.</li>
-                            <h4 className="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-                            <ul className="list-inline">
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">PHP</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">jQuery</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">HTML/CSS</span></li>
-                              <li className="list-inline-item"><span className="badge badge-primary badge-pill">MySQL</span></li>
-                            </ul>
-                          </div>
-                        </article>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-                <div className="col-lg-3">
-                  <section className="resume-section skills-section mb-5">
-                    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
-                    <div className="resume-section-content">
-                      <div className="resume-skill-item">
-                        <h4 className="resume-skills-cat font-weight-bold">Frontend</h4>
-                        <ul className="list-unstyled mb-4">
-                          <li className="mb-2">
-                            <div className="resume-skill-name">Angular</div>
-                            <div className="progress resume-progress">
-                              <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{ width: '30%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </li>
-                          <li className="mb-2">
-                            <div className="resume-skill-name">React / Redux</div>
-                            <div className="progress resume-progress">
-                              <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{ width: '85%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </li>
-                          <li className="mb-2">
-                            <div className="resume-skill-name">JavaScript</div>
-                            <div className="progress resume-progress">
-                              <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{ width: '80%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </li>
-                          <li className="mb-2">
-                            <div className="resume-skill-name">Node.js</div>
-                            <div className="progress resume-progress">
-                              <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{ width: '40%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </li>
-                          <li className="mb-2">
-                            <div className="resume-skill-name">HTML/CSS/SASS/LESS</div>
-                            <div className="progress resume-progress">
-                              <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{ width: '96%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="resume-skill-item">
-                        <h4 className="resume-skills-cat font-weight-bold">Backend</h4>
-                        <ul className="list-unstyled">
-                          <li className="mb-2">
-                            <div className="resume-skill-name">PHP</div>
-                            <div className="progress resume-progress">
-                              <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{ width: '86%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </li>
-                          <li className="mb-2">
-                            <div className="resume-skill-name">WordPress/WooCommerce</div>
-                            <div className="progress resume-progress">
-                              <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{ width: '95%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="resume-skill-item">
-                        <h4 className="resume-skills-cat font-weight-bold">Others</h4>
-                        <ul className="list-inline">
-                          <li className="list-inline-item"><span className="badge badge-light">AWS</span></li>
-                          <li className="list-inline-item"><span className="badge badge-light">Code Review</span></li>
-                          <li className="list-inline-item"><span className="badge badge-light">Git</span></li>
-                          <li className="list-inline-item"><span className="badge badge-light">Unit Testing</span></li>
-                          <li className="list-inline-item"><span className="badge badge-light">Wireframing</span></li>
-                          <li className="list-inline-item"><span className="badge badge-light">WordPress</span></li>
-                          <li className="list-inline-item"><span className="badge badge-light">WooCommerce</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </section>
-                  <section className="resume-section education-section mb-5">
-                    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
-                    <div className="resume-section-content">
-                      <ul className="list-unstyled">
-                        <li className="mb-2">
-                          <div className="resume-degree font-weight-bold">Masters of Computer Application</div>
-                          <div className="resume-degree-org">Pune University</div>
-                          <div className="resume-degree-time">2009 - 2012</div>
-                        </li>
-                        <li>
-                          <div className="resume-degree font-weight-bold">Bachalors of Computer Application</div>
-                          <div className="resume-degree-org">Sikkim Manipal University</div>
-                          <div className="resume-degree-time">2006 - 2009</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-                  <section className="resume-section reference-section mb-5">
-                    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
-                    <div className="resume-section-content">
-                      <ul className="list-unstyled resume-awards-list">
-                        <li className="mb-2 pl-4 position-relative">
-                          <i className="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-                          <div className="resume-award-name">Employee of the month</div>
-                          <div className="resume-award-desc">Awarded by employee of the month in Synechron Technologies in March 2019.</div>
-                        </li>
-                        <li className="mb-0 pl-4 position-relative">
-                          <i className="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-                          <div className="resume-award-name">Spot Award</div>
-                          <div className="resume-award-desc">Recieved Spot Award in Synechron Technologies in Feb 2019.</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-                  <section className="resume-section language-section mb-5">
-                    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
-                    <div className="resume-section-content">
-                      <ul className="list-unstyled resume-lang-list">
-                        <li className="mb-2"><span className="resume-lang-name font-weight-bold">Hindi</span> <small className="text-muted font-weight-normal">(Native)</small></li>
-                        <li className="mb-2 align-middle"><span className="resume-lang-name font-weight-bold">English</span> <small className="text-muted font-weight-normal">(Professional)</small></li>
-                      </ul>
-                    </div>
-                  </section>
-                  <section className="resume-section interests-section mb-5">
-                    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
-                    <div className="resume-section-content">
-                      <ul className="list-unstyled">
-                        <li className="mb-1">Bike Riding</li>
-                        <li className="mb-1">Travelling</li>
-                        <li className="mb-1">Cooking</li>
-                      </ul>
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
+								<li><a href="http://tiny.cc/vc6alz" target="_blank"><i class="fas fa-map-marker-alt fa-fw mr-2" data-fa-transform="grow-3"></i>Pune, India</a></li>
+						    </ul>
+					    </div><!--//primary-info-->
+					    <div class="secondary-info ml-md-auto mt-2">
+						    <ul class="resume-social list-unstyled">
+				                <li class="mb-3"><a href="https://www.linkedin.com/in/mani-2209/" target="_blank"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/mani-2209/</a></li>
+				                <li class="mb-3"><a href="https://www.github.com/mani2209" target="_blank"><span class="fa-container text-center mr-2"><i class="fab fa-github-alt fa-fw"></i></span>github.com/mani2209</a></li>
+						    </ul>
+					    </div><!--//secondary-info-->
+					    
+				    </div><!--//media-body-->
+			    </div><!--//media-->
+		    </header>
+		    <div class="resume-body p-5">
+			    <section class="resume-section summary-section mb-5">
+				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
+				    <div class="resume-section-content">
+						<li>Designing and Developing experience of <span id="experience"></span>.</li>
+						<li>Involved in Requirements Mgmt., Designing, Implementations including Rollout and Post production support</li>
+						<li>Proficient in Involved in conceptualization and prototyping required for Product development such as building WordPress Plugin and Themes</li>
+						<li>Ability to relate with people at any levels of business using excellent interpersonal skills</li>
+				    </div>
+			    </section><!--//summary-section-->
+			    <div class="row">
+				    <div class="col-lg-9">
+					    <section class="resume-section experience-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
+						    <div class="resume-section-content">
+							    <div class="resume-timeline position-relative">
+								    <article class="resume-timeline-item position-relative pb-5">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Senior Associate</h3>
+										        <div class="resume-company-name ml-auto"><i class="fas fa-building"></i> Synechron Technologies Pvt. Ltd</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">January 2018 - Present</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">React with Redux</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Node.js</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Webpack</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">GraphQL</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+								    
+								    <article class="resume-timeline-item position-relative pb-5">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Software Engineer  <small class="text-muted">Contractor</small></h3>
+										        <div class="resume-company-name ml-auto"><i class="fas fa-building"></i> Avalara Technologies Pvt. Ltd</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">April 2017 to Dec 2017</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">PHP</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Angular 4</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">WordPress</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Node.js</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+								    
+								    <article class="resume-timeline-item position-relative pb-5">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Senior Software Developer</h3>
+										        <div class="resume-company-name ml-auto"><i class="fas fa-building"></i> Wondersoft Multimedia Solutions</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">April 2015 – March 2017</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">PHP</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Angular.js</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/CSS</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">WordPress</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+								    
+								    <article class="resume-timeline-item position-relative">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Software Developer <small class="text-muted"></small></h3>
+										        <div class="resume-company-name ml-auto"><i class="fas fa-building"></i> Stark Digital Media Services Pvt. Ltd</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">April 2014 – March 2015</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">PHP</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/CSS</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">WordPress</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+									</article><!--//resume-timeline-item-->
+									
+									<article class="resume-timeline-item position-relative">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Web Application Developer <small class="text-muted"></small></h3>
+										        <div class="resume-company-name ml-auto"><i class="fas fa-building"></i> Multivision India Pvt. Ltd</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">April 2013 – Feb 2014</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Projetcs:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+										    <p>TBD</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">PHP</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/CSS</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+								    
+								    
+							    </div><!--//resume-timeline-->
+							    
+							    
+							    
+							    
+							    
+							    
+						    </div>
+					    </section><!--//experience-section-->
+				    </div>
+				    <div class="col-lg-3">
+					    <section class="resume-section skills-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
+						    <div class="resume-section-content">
+						        <div class="resume-skill-item">
+							        <h4 class="resume-skills-cat font-weight-bold">Frontend</h4>
+							        <ul class="list-unstyled mb-4">
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Angular</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">React / Redux</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">JavaScript</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Node.js</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">HTML/CSS/SASS/LESS</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+							        </ul>
+						        </div><!--//resume-skill-item-->
+						        
+						        <div class="resume-skill-item">
+						            <h4 class="resume-skills-cat font-weight-bold">Backend</h4>
+							        <ul class="list-unstyled">
+								        <li class="mb-2">
+								            <div class="resume-skill-name">PHP</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 86%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">WordPress/WooCommerce</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+							        </ul>
+						        </div><!--//resume-skill-item-->
+						        
+						        <div class="resume-skill-item">
+						            <h4 class="resume-skills-cat font-weight-bold">Others</h4>
+						            <ul class="list-inline">
+							            <li class="list-inline-item"><span class="badge badge-light">AWS</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Code Review</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Git</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Unit Testing</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Wireframing</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">WordPress</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">WooCommerce</span></li>
+						            </ul>
+						        </div><!--//resume-skill-item-->
+						    </div><!--resume-section-content-->
+					    </section><!--//skills-section-->
+					    <section class="resume-section education-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled">
+								    <li class="mb-2">
+								        <div class="resume-degree font-weight-bold">Masters of Computer Application</div>
+								        <div class="resume-degree-org">Pune University</div>
+								        <div class="resume-degree-time">2009 - 2012</div>
+								    </li>
+								    <li>
+								        <div class="resume-degree font-weight-bold">Bachalors of Computer Application</div>
+								        <div class="resume-degree-org">Sikkim Manipal University</div>
+								        <div class="resume-degree-time">2006 - 2009</div>
+								    </li>
+							    </ul>
+						    </div>
+					    </section><!--//education-section-->
+					    <section class="resume-section reference-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled resume-awards-list">
+								    <li class="mb-2 pl-4 position-relative">
+								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name">Employee of the month</div>
+								        <div class="resume-award-desc">Awarded by employee of the month in Synechron Technologies in March 2019.</div>
+								    </li>
+								    <li class="mb-0 pl-4 position-relative">
+								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name">Spot Award</div>
+								        <div class="resume-award-desc">Recieved Spot Award in Synechron Technologies in Feb 2019.</div>
+								    </li>
+							    </ul>
+						    </div>
+					    </section><!--//interests-section-->
+					    <section class="resume-section language-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled resume-lang-list">
+								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">Hindi</span> <small class="text-muted font-weight-normal">(Native)</small></li>
+								    <li class="mb-2 align-middle"><span class="resume-lang-name font-weight-bold">English</span> <small class="text-muted font-weight-normal">(Professional)</small></li>
+							    </ul>
+						    </div>
+					    </section><!--//language-section-->
+					    <section class="resume-section interests-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled">
+								    <li class="mb-1">Bike Riding</li>
+								    <li class="mb-1">Travelling</li>
+								    <li class="mb-1">Cooking</li>
+							    </ul>
+						    </div>
+					    </section><!--//interests-section-->
+					    
+				    </div>
+			    </div><!--//row-->
+		    </div><!--//resume-body-->
+		    
+		    
+	    </div>
+    </article>  
+
+    
+    <footer class="footer text-center pt-2 pb-5">
+	     
+    </footer>
+
+    
+
 </body>
-</html>
+</html> 
+
